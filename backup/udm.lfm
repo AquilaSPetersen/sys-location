@@ -9,9 +9,6 @@ object dm: Tdm
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = False
-    Properties.Strings = (
-      'AutoEncodeStrings='
-    )
     Connected = True
     HostName = 'localhost'
     Port = 3050
@@ -25,12 +22,12 @@ object dm: Tdm
   object ZQuery1: TZQuery
     Connection = ZConnection1
     Params = <>
-    left = 304
-    top = 24
+    left = 302
+    top = 167
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    left = 440
-    top = 16
+    left = 528
+    top = 225
   end
 end

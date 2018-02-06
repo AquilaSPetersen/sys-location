@@ -1,0 +1,33 @@
+object dm: Tdm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 389
+  HorizontalOffset = 320
+  VerticalOffset = 131
+  Width = 608
+  PPI = 96
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3050
+    Database = 'E:\GitHub\sys-location\dados\bd.FDB'
+    User = 'sysdba'
+    Password = 'masterkey'
+    Protocol = 'firebird-1.5'
+    left = 376
+    top = 16
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 302
+    top = 167
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 528
+    top = 225
+  end
+end

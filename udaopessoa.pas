@@ -6,6 +6,10 @@ interface
 
 uses
   Classes, SysUtils;
+type
+  TDAOPessoa = class
+
+  end;
 
 
 

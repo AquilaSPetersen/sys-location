@@ -10,7 +10,6 @@ type
   TImovel = class
     published
       property Codigo: Integer;
-      property Numero_Apartamento;
   end;
 
 implementation

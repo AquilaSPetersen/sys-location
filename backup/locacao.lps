@@ -4,22 +4,23 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="5">
+    <Units Count="3">
       <Unit0>
         <Filename Value="locacao.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="29" Y="14"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="44"/>
       </Unit0>
       <Unit1>
         <Filename Value="upessoa.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPessoa"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="77"/>
+        <TopLine Value="79"/>
         <CursorPos X="55" Y="41"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="44"/>
       </Unit1>
       <Unit2>
         <Filename Value="udaopessoa.pas"/>
@@ -27,24 +28,12 @@
         <UnitName Value="uDAOPessoa"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="10"/>
-        <UsageCount Value="42"/>
+        <UsageCount Value="41"/>
       </Unit2>
-      <Unit3>
-        <Filename Value="locacao.lpi"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="XML"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="uimovel.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uImovel"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="25" Y="10"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-      </Unit4>
     </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>

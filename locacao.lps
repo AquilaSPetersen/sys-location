@@ -36,6 +36,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="uDm"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
         <CursorPos X="37" Y="8"/>
         <UsageCount Value="50"/>
@@ -66,12 +67,25 @@
         <Filename Value="uimovel.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uImovel"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
+        <TopLine Value="21"/>
+        <CursorPos X="3" Y="36"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit6>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="uimovel.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uimovel.pas"/>
+        <Caret Line="18" Column="60"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uimovel.pas"/>
+        <Caret Line="21" Column="97" TopLine="4"/>
+      </Position3>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

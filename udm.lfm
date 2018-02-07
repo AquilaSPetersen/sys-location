@@ -15,7 +15,7 @@ object dm: Tdm
     Connected = True
     HostName = 'localhost'
     Port = 3050
-    Database = 'E:\GitHub\sys-location\dados\bd.FDB'
+    Database = 'C:\GitHub\sys-location\dados\bd.FDB'
     User = 'sysdba'
     Password = 'masterkey'
     Protocol = 'firebird-1.5'

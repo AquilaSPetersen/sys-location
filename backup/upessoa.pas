@@ -10,7 +10,7 @@ type
 
   { TPessoas }
 
-  TPessoa = class
+  TPessoas = class
   private
     FBairro         : String;
     FCelular        : String;

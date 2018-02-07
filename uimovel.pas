@@ -5,7 +5,7 @@ unit uImovel;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, uPessoa;
 type
 
   { TImovel }
@@ -19,6 +19,14 @@ type
     published
       property Codigo: Integer read FCodigo write SetCodigo;
       property Numero_Apartamento : integer read FNumero_Apartamento write SetNumero_Apartamento;
+      property CEP                : Integer;
+      property Lougradouro        : String;
+      property Numero_Lougradouro : Integer;
+      property Bairro             : String;
+      property Cidade             : String;
+      property Codigo_Proprietario: TPessoa.Codigo;
+      property Nome_Proprietario  : TPessoa.Nome;
+
   end;
 
 implementation

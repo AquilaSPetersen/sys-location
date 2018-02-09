@@ -5,7 +5,7 @@ unit uDm;
 interface
 
 uses
-  Classes, ZConnection, ZDataset, db;
+  Classes, ZConnection, ZDataset, ZStoredProcedure, db;
 
 type
 
@@ -15,6 +15,7 @@ type
     DataSource1: TDataSource;
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
+    ZStoredProc1: TZStoredProc;
     procedure DataModuleCreate(Sender: TObject);
   private
 

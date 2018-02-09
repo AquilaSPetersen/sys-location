@@ -26,11 +26,17 @@ object dm: Tdm
     Connection = ZConnection1
     Params = <>
     left = 304
-    top = 24
+    top = 16
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
     left = 440
     top = 16
+  end
+  object ZStoredProc1: TZStoredProc
+    Connection = ZConnection1
+    Params = <>
+    left = 344
+    top = 136
   end
 end

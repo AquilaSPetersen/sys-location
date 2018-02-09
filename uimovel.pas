@@ -16,18 +16,18 @@ type
     FCEP: Integer;
     FCidade: String;
     FCodigo: Integer;
-    FCodigo_Proprietario: TPessoa.Codigo;
+    FCodigo_proprietario: TPessoa;
     FLougradouro: String;
-    FNome_Proprietario: TPessoa.Nome;
+    FNome_proprietario: TPessoa;
     FNumero_Apartamento: integer;
     FNumero_Lougradouro: Integer;
     procedure SetBairro(AValue: String);
     procedure SetCEP(AValue: Integer);
     procedure SetCidade(AValue: String);
     procedure SetCodigo(AValue: Integer);
-    procedure SetCodigo_Proprietario(AValue: TPessoa.Codigo);
+    procedure SetCodigo_proprietario(AValue: TPessoa);
     procedure SetLougradouro(AValue: String);
-    procedure SetNome_Proprietario(AValue: TPessoa.Nome);
+    procedure SetNome_proprietario(AValue: TPessoa);
     procedure SetNumero_Apartamento(AValue: integer);
     procedure SetNumero_Lougradouro(AValue: Integer);
     published
@@ -38,9 +38,8 @@ type
       property Numero_Lougradouro : Integer read FNumero_Lougradouro write SetNumero_Lougradouro;
       property Bairro             : String read FBairro write SetBairro;
       property Cidade             : String read FCidade write SetCidade;
-      property Codigo_Proprietario: TPessoa.Codigo read FCodigo_Proprietario write SetCodigo_Proprietario;
-      property Nome_Proprietario  : TPessoa.Nome read FNome_Proprietario write SetNome_Proprietario;
-
+      property Nome_proprietario  :TPessoa read FNome_proprietario write SetNome_proprietario;
+      property Codigo_proprietario :TPessoa read FCodigo_proprietario write SetCodigo_proprietario;
   end;
 
 implementation
@@ -51,6 +50,12 @@ procedure TImovel.SetCodigo(AValue: Integer);
 begin
   if FCodigo=AValue then Exit;
   FCodigo:=AValue;
+end;
+
+procedure TImovel.SetCodigo_proprietario(AValue: TPessoa);
+begin
+  if FCodigo_proprietario=AValue then Exit;
+  FCodigo_proprietario:=AValue;
 end;
 
 procedure TImovel.SetBairro(AValue: String);
@@ -71,22 +76,16 @@ begin
   FCidade:=AValue;
 end;
 
-procedure TImovel.SetCodigo_Proprietario(AValue: TPessoa.Codigo);
-begin
-  if FCodigo_Proprietario=AValue then Exit;
-  FCodigo_Proprietario:=AValue;
-end;
-
 procedure TImovel.SetLougradouro(AValue: String);
 begin
   if FLougradouro=AValue then Exit;
   FLougradouro:=AValue;
 end;
 
-procedure TImovel.SetNome_Proprietario(AValue: TPessoa.Nome);
+procedure TImovel.SetNome_proprietario(AValue: TPessoa);
 begin
-  if FNome_Proprietario=AValue then Exit;
-  FNome_Proprietario:=AValue;
+  if FNome_proprietario=AValue then Exit;
+  FNome_proprietario:=AValue;
 end;
 
 procedure TImovel.SetNumero_Apartamento(AValue: integer);

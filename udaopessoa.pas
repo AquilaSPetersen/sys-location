@@ -90,8 +90,12 @@ begin
   vQry := TZQuery.Create(nil);
   try
     vQry.Connection := DM.ZConnection1;
-    vQry.SQL.Text := 'INSERT INTO PESSOA (CODIGO, NOME, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, MUNICIPIO, UF, CEP, CPF_CNPJ, TELEFONE, TIPO, CELULAR, POSSUIFIADOR, FIADOR )' +
-                     'VALUES (:CODIGO, :NOME, :LOGRADOURO, :NUMERO, :COMPLEMENTO, :BAIRRO, :MUNICIPIO, :UF, :CEP, :CPF_CNPJ, :TELEFONE, :TIPO, :CELULAR, :POSSUIFIADOR, :FIADOR)';
+    vQry.SQL.Text :=  'INSERT INTO PESSOA (CODIGO, NOME, ENDERECO, NUMERO,' +
+                      'COMPLEMENTO, BAIRRO, CIDADE, UF, CEP, CPF, TELEFONE,' +
+                      'TIPO, CELULAR, EMAIL, DT_NASCIMENTO, DT_CADASTRO, IDENTIDADE)'+
+                      'VALUES (:CODIGO, :NOME, :ENDERECO,:NUMERO,:COMPLEMENTO,'+
+                      ':BAIRRO, :CIDADE, :UF, :CEP, :CPF, :TELEFONE, :TIPO,'+
+                      ':CELULAR, :EMAIL, :DT_NASCIMENTO, :DT_CADASTRO, :IDENTIDADE)';
 
     if aPessoa.Codigo <= 0 then
       aPessoa.Codigo := GetCodigo;

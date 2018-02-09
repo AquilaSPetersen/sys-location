@@ -2,8 +2,8 @@ object dm: Tdm
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 389
-  HorizontalOffset = 320
-  VerticalOffset = 131
+  HorizontalOffset = 329
+  VerticalOffset = 218
   Width = 608
   PPI = 96
   object ZConnection1: TZConnection

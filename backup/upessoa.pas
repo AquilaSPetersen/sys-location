@@ -10,7 +10,7 @@ type
 
   { TPessoas }
 
-  TPessoas = class
+  TPessoa = class
   private
     FBairro         : String;
     FCelular        : String;
@@ -46,6 +46,8 @@ type
     procedure SetTelefone(AValue: String);
     procedure Settipo(AValue: boolean);
     procedure SetUF(AValue: String);
+    public
+      constructor Create;
     published
       property Codigo               :Integer read FCodigo write SetCodigo;
       property Nome                 :String read FNome write SetNome;
@@ -71,106 +73,111 @@ implementation
 
 { TPessoas }
 
-procedure TPessoas.SetBairro(AValue: String);
+procedure TPessoa.SetBairro(AValue: String);
 begin
   if FBairro=AValue then Exit;
   FBairro:=AValue;
 end;
 
-procedure TPessoas.SetCelular(AValue: String);
+procedure TPessoa.SetCelular(AValue: String);
 begin
   if FCelular=AValue then Exit;
   FCelular:=AValue;
 end;
 
-procedure TPessoas.SetCEP(AValue: String);
+procedure TPessoa.SetCEP(AValue: String);
 begin
   if FCEP=AValue then Exit;
   FCEP:=AValue;
 end;
 
-procedure TPessoas.SetCidade(AValue: String);
+procedure TPessoa.SetCidade(AValue: String);
 begin
   if FCidade=AValue then Exit;
   FCidade:=AValue;
 end;
 
-procedure TPessoas.SetCodigo(AValue: Integer);
+procedure TPessoa.SetCodigo(AValue: Integer);
 begin
   if FCodigo=AValue then Exit;
   FCodigo:=AValue;
 end;
 
-procedure TPessoas.SetComplemento(AValue: String);
+procedure TPessoa.SetComplemento(AValue: String);
 begin
   if FComplemento=AValue then Exit;
   FComplemento:=AValue;
 end;
 
-procedure TPessoas.SetCPF(AValue: String);
+procedure TPessoa.SetCPF(AValue: String);
 begin
   if FCPF=AValue then Exit;
   FCPF:=AValue;
 end;
 
-procedure TPessoas.SetDt_Cadastro(AValue: TDate);
+procedure TPessoa.SetDt_Cadastro(AValue: TDate);
 begin
   if FDt_Cadastro=AValue then Exit;
   FDt_Cadastro:=AValue;
 end;
 
-procedure TPessoas.SetDt_Nascimento(AValue: TDate);
+procedure TPessoa.SetDt_Nascimento(AValue: TDate);
 begin
   if FDt_Nascimento=AValue then Exit;
   FDt_Nascimento:=AValue;
 end;
 
-procedure TPessoas.SetEmail(AValue: String);
+procedure TPessoa.SetEmail(AValue: String);
 begin
   if FEmail=AValue then Exit;
   FEmail:=AValue;
 end;
 
-procedure TPessoas.SetEndereco(AValue: String);
+procedure TPessoa.SetEndereco(AValue: String);
 begin
   if FEndereco=AValue then Exit;
   FEndereco:=AValue;
 end;
 
-procedure TPessoas.SetIdentidade(AValue: integer);
+procedure TPessoa.SetIdentidade(AValue: integer);
 begin
   if FIdentidade=AValue then Exit;
   FIdentidade:=AValue;
 end;
 
-procedure TPessoas.SetNome(AValue: String);
+procedure TPessoa.SetNome(AValue: String);
 begin
   if FNome=AValue then Exit;
   FNome:=AValue;
 end;
 
-procedure TPessoas.SetNumero(AValue: Integer);
+procedure TPessoa.SetNumero(AValue: Integer);
 begin
   if FNumero=AValue then Exit;
   FNumero:=AValue;
 end;
 
-procedure TPessoas.SetTelefone(AValue: String);
+procedure TPessoa.SetTelefone(AValue: String);
 begin
   if FTelefone=AValue then Exit;
   FTelefone:=AValue;
 end;
 
-procedure TPessoas.Settipo(AValue: boolean);
+procedure TPessoa.Settipo(AValue: boolean);
 begin
   if Ftipo=AValue then Exit;
   Ftipo:=AValue;
 end;
 
-procedure TPessoas.SetUF(AValue: String);
+procedure TPessoa.SetUF(AValue: String);
 begin
   if FUF=AValue then Exit;
   FUF:=AValue;
+end;
+
+constructor TPessoa.Create;
+begin
+
 end;
 
 end.

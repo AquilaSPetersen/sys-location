@@ -2,8 +2,8 @@ object dm: Tdm
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 389
-  HorizontalOffset = 320
-  VerticalOffset = 131
+  HorizontalOffset = 329
+  VerticalOffset = 218
   Width = 608
   PPI = 96
   object ZConnection1: TZConnection
@@ -26,11 +26,17 @@ object dm: Tdm
     Connection = ZConnection1
     Params = <>
     left = 304
-    top = 24
+    top = 16
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
     left = 440
     top = 16
+  end
+  object ZStoredProc1: TZStoredProc
+    Connection = ZConnection1
+    Params = <>
+    left = 344
+    top = 136
   end
 end

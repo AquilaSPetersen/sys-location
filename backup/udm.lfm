@@ -9,10 +9,13 @@ object dm: Tdm
   object ZConnection1: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
     Connected = True
     HostName = 'localhost'
     Port = 3050
-    Database = 'E:\GitHub\sys-location\dados\bd.FDB'
+    Database = 'C:\GitHub\sys-location\dados\bd.FDB'
     User = 'sysdba'
     Password = 'masterkey'
     Protocol = 'firebird-1.5'
@@ -22,12 +25,18 @@ object dm: Tdm
   object ZQuery1: TZQuery
     Connection = ZConnection1
     Params = <>
-    left = 302
-    top = 167
+    left = 304
+    top = 16
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    left = 528
-    top = 225
+    left = 440
+    top = 16
+  end
+  object ZStoredProc1: TZStoredProc
+    Connection = ZConnection1
+    Params = <>
+    left = 344
+    top = 136
   end
 end
